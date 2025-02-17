@@ -15,7 +15,7 @@ spec:
         app: gaurav-bankapp-deploy
     spec:
       containers:
-      - name: gaurav-bankapp-deploy
+      - name: gaurav4docker-container
         image: gaurav4docker/gaurav-bankapp-deploy
         ports:
         - containerPort: 8082
