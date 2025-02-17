@@ -3,20 +3,20 @@ kind: Deployment
 metadata:
   name: gaurav-bankapp-deploy
   labels:
-    app: gaurav-bankapp-deploy
+    app: gaurav-bankapp
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: gaurav-bankapp-deploy
+      app: gaurav-bankapp
   template:
     metadata:
       labels:
-        app: gaurav-bankapp-deploy
+        app: gaurav-bankapp
     spec:
       containers:
-      - name: gaurav4docker-container
-        image: gaurav4docker/gaurav-bankapp-deploy
+      - name: gaurav-bankapp-container
+        image: gaurav4docker/gaurav-bankapp
         ports:
         - containerPort: 8082
 ---
